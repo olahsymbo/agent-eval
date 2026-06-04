@@ -8,7 +8,7 @@
 - information gain for uncertainty reduction
 - entropy curves for temporal behavior
 - robustness summaries across repeated runs
-- a configurable Entropic Agent Score
+- a configurable Entropic Agent Score 
 
 Any agent library can integrate by converting its trace events into `AgentRun`
 records.
