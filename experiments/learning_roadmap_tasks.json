@@ -1,0 +1,59 @@
+[
+  {
+    "id": "roadmap-agent-engineer",
+    "difficulty": "medium",
+    "difficulty_score": 0.55,
+    "goal": "Become productive building LLM agents with tools, evaluation, and deployment.",
+    "learner": {
+      "experience": "intermediate Python developer",
+      "hours_per_week": 8,
+      "background": "backend APIs"
+    },
+    "constraints": {
+      "weeks": 8,
+      "budget": "low",
+      "preferred_style": "project-based"
+    },
+    "prompt": "Create an 8-week roadmap for an intermediate Python developer who wants to build production LLM agents.",
+    "expected": "A project-based roadmap covering prompting, tool use, agent orchestration, evaluation, deployment, and a capstone.",
+    "expected_terms": ["prompting", "tool", "evaluation", "deployment", "capstone"]
+  },
+  {
+    "id": "roadmap-data-analyst",
+    "difficulty": "easy",
+    "difficulty_score": 0.35,
+    "goal": "Transition from spreadsheet analysis to Python data analysis and dashboards.",
+    "learner": {
+      "experience": "beginner programmer",
+      "hours_per_week": 6,
+      "background": "Excel and reporting"
+    },
+    "constraints": {
+      "weeks": 10,
+      "budget": "free resources",
+      "preferred_style": "guided practice"
+    },
+    "prompt": "Create a 10-week roadmap for an Excel analyst learning Python data analysis and dashboards.",
+    "expected": "A beginner roadmap covering Python basics, pandas, visualization, dashboard projects, and assessment checkpoints.",
+    "expected_terms": ["python", "pandas", "visualization", "dashboard", "project"]
+  },
+  {
+    "id": "roadmap-frontend-ai",
+    "difficulty": "medium",
+    "difficulty_score": 0.5,
+    "goal": "Learn to build AI-assisted frontend applications with strong UX and evaluation loops.",
+    "learner": {
+      "experience": "intermediate frontend developer",
+      "hours_per_week": 5,
+      "background": "React"
+    },
+    "constraints": {
+      "weeks": 6,
+      "budget": "moderate",
+      "preferred_style": "portfolio projects"
+    },
+    "prompt": "Create a 6-week roadmap for a React developer learning AI-assisted frontend application development.",
+    "expected": "A frontend-focused roadmap covering AI UX, API integration, state management, evaluation, and portfolio work.",
+    "expected_terms": ["frontend", "api", "ux", "evaluation", "portfolio"]
+  }
+]

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "entropy-agent-eval"
+version = "0.1.4"
+description = "Entropy-based evaluation metrics for AI agent behavior, tools, trajectories, uncertainty reduction, and robustness."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+license = "MIT"
+authors = [{name = "olahsymbo"}]
+keywords = ["agents", "evaluation", "entropy", "llm", "langchain", "adk", "benchmark"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.7"]
+langchain = [
+    "langchain-core>=0.3",
+    "langchain-openai>=0.2",
+]
+google-adk = [
+    "google-adk>=0.1.0",
+    "google-genai>=1.0.0",
+]
+
+[project.scripts]
+eea = "entropy_agent_eval.cli:main"
+
+[tool.poetry]
+packages = [{include = "entropy_agent_eval"}]
+include = ["LICENSE", "CHANGELOG.md"]
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8"
+ruff = ">=0.5"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

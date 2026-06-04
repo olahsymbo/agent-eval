@@ -1,0 +1,3556 @@
+{
+  "runs": [
+    {
+      "after_state": {
+        "correct": 0.81,
+        "partial": 0.13999999999999996,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.048,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1200.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 1,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.048,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1200.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 2,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.048,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1200.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 3,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.8,
+        "partial": 0.14999999999999997,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.05,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1225.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 1,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.05,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1225.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 2,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.8,
+        "partial": 0.14999999999999997,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.05,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1225.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 3,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.062,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1375.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 1,
+        "task_category": "multi_hop"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.74,
+        "partial": 0.21000000000000002,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.062,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1375.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 2,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.062,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1375.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 3,
+        "task_category": "multi_hop"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.064,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1400.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 1,
+        "task_category": "multi_hop"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.064,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1400.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 2,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.064,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1400.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 3,
+        "task_category": "multi_hop"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.064,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1400.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 1,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.064,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1400.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 2,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.064,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1400.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 3,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.072,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1500.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 1,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.072,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1500.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 2,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.072,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1500.0,
+      "metadata": {
+        "agent_name": "direct-llm",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 3,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.81,
+        "partial": 0.13999999999999996,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.078,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1900.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 1,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.81,
+        "partial": 0.13999999999999996,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.078,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1900.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 2,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.81,
+        "partial": 0.13999999999999996,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.093,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2000.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 3,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.8,
+        "partial": 0.14999999999999997,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.08,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1925.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 1,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.8,
+        "partial": 0.14999999999999997,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.08,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1925.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 2,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.8,
+        "partial": 0.14999999999999997,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.08,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 1925.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 3,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.74,
+        "partial": 0.21000000000000002,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.092,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2075.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 1,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.74,
+        "partial": 0.21000000000000002,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.092,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2075.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 2,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.092,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2075.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 3,
+        "task_category": "multi_hop"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.094,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2100.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 1,
+        "task_category": "multi_hop"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.094,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2100.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 2,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.094,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2100.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 3,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.094,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2100.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 1,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.109,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2200.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 2,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.094,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2100.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 3,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.6900000000000001,
+        "partial": 0.25999999999999995,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.117,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2300.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 1,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.102,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2200.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 2,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.6900000000000001,
+        "partial": 0.25999999999999995,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.117,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "think",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2300.0,
+      "metadata": {
+        "agent_name": "react-search",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 3,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.093,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2300.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 1,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.093,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2300.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 2,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.093,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2300.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 3,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.8,
+        "partial": 0.14999999999999997,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.095,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2325.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 1,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.8,
+        "partial": 0.14999999999999997,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.095,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2325.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 2,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.095,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2325.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 3,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.74,
+        "partial": 0.21000000000000002,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.137,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2675.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 1,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.74,
+        "partial": 0.21000000000000002,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.137,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2675.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 2,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.137,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2675.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 3,
+        "task_category": "multi_hop"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.139,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 1,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.139,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 2,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.139,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 3,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.124,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2600.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 1,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.139,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "debug",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 2,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.124,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2600.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 3,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.147,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "debug",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2800.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 1,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.6900000000000001,
+        "partial": 0.25999999999999995,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.132,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 2,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.6900000000000001,
+        "partial": 0.25999999999999995,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.132,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "react-search-code",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 3,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.81,
+        "partial": 0.13999999999999996,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.118,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 1,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.118,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 2,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.81,
+        "partial": 0.13999999999999996,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.118,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2700.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "What is the capital of France?",
+        "difficulty": "easy",
+        "expected": "Paris",
+        "repetition": 3,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.8,
+        "partial": 0.14999999999999997,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.12,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2725.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 1,
+        "task_category": "factual"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.12,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2725.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 2,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.12,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2725.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Who wrote Things Fall Apart?",
+        "difficulty": "easy",
+        "expected": "Chinua Achebe",
+        "repetition": 3,
+        "task_category": "factual"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "qa-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.74,
+        "partial": 0.21000000000000002,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.162,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3075.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 1,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.74,
+        "partial": 0.21000000000000002,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.162,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3075.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 2,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.74,
+        "partial": 0.21000000000000002,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.162,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3075.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Find the author of a book, then identify the country where that author was born.",
+        "difficulty": "medium",
+        "expected": "Requires two-step evidence gathering.",
+        "repetition": 3,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.164,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3100.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 1,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.164,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3100.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 2,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.164,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "read",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "search",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "synthesize",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3100.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Compare two companies' founding years and determine which is older.",
+        "difficulty": "medium",
+        "expected": "Requires retrieval and comparison.",
+        "repetition": 3,
+        "task_category": "multi_hop"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "mh-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.149,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "revise",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3000.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 1,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.149,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "revise",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3000.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 2,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.73,
+        "partial": 0.22000000000000003,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.149,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "revise",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3000.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Write a Python function that removes duplicates while preserving order.",
+        "difficulty": "medium",
+        "expected": "Stable deduplication function.",
+        "repetition": 3,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-001"
+    },
+    {
+      "after_state": {
+        "correct": 0.6900000000000001,
+        "partial": 0.25999999999999995,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.157,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "revise",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3100.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 1,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.34,
+        "partial": 0.31,
+        "wrong": 0.35
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.127,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 2900.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 2,
+        "task_category": "coding"
+      },
+      "outcome": "incorrect",
+      "reward": null,
+      "success": false,
+      "task_id": "code-002"
+    },
+    {
+      "after_state": {
+        "correct": 0.6900000000000001,
+        "partial": 0.25999999999999995,
+        "wrong": 0.05
+      },
+      "before_state": {
+        "correct": 0.35,
+        "partial": 0.25,
+        "wrong": 0.4
+      },
+      "cost": 0.157,
+      "events": [
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "plan",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "code",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "test",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {},
+          "name": "revise",
+          "timestamp": null
+        },
+        {
+          "kind": "action",
+          "metadata": {},
+          "name": "answer",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": 3100.0,
+      "metadata": {
+        "agent_name": "planner-executor",
+        "benchmark_prompt": "Debug a function that fails on empty input and nested lists.",
+        "difficulty": "hard",
+        "expected": "Identify edge cases and provide a corrected implementation.",
+        "repetition": 3,
+        "task_category": "coding"
+      },
+      "outcome": "correct",
+      "reward": null,
+      "success": true,
+      "task_id": "code-002"
+    }
+  ]
+}

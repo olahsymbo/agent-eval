@@ -1,0 +1,28 @@
+{
+  "google-adk-learning-roadmap": {
+    "action_entropy": 2.321928094887362,
+    "action_entropy_normalized": 1.0,
+    "entropic_agent_score": 2.4464996694571415,
+    "exploration_efficiency": 0.43067655807339306,
+    "information_gain": 1.0158231113837484,
+    "mean_cost": 0.0,
+    "mean_latency_ms": 0.0,
+    "mean_trajectory_length": 5.0,
+    "robustness": {
+      "cost_mean": 0.0,
+      "cost_std": 0.0,
+      "outcome_entropy": 0.0,
+      "outcome_entropy_normalized": 0.0,
+      "runs": 3,
+      "success_rate": 1.0,
+      "trajectory_entropy": 0.0,
+      "trajectory_entropy_normalized": 0.0
+    },
+    "runs": 3,
+    "success_rate": 1.0,
+    "tool_entropy": 2.0,
+    "tool_entropy_normalized": 1.0,
+    "trajectory_entropy": 0.0,
+    "trajectory_entropy_normalized": 0.0
+  }
+}

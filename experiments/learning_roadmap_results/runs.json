@@ -1,0 +1,193 @@
+{
+  "runs": [
+    {
+      "after_state": {
+        "complete": 0.8999999999999999,
+        "partial": 0.050000000000000086,
+        "weak": 0.05
+      },
+      "before_state": {
+        "complete": 0.34,
+        "partial": 0.33,
+        "weak": 0.33
+      },
+      "cost": 0.0,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "assess_learner_profile",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "select_learning_modules",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "build_weekly_schedule",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "design_assessment_checkpoints",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {
+            "provider": "google-adk"
+          },
+          "name": "gemini-3-flash-preview",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": null,
+      "metadata": {
+        "agent_name": "google-adk-learning-roadmap",
+        "benchmark_prompt": "Create an 8-week roadmap for an intermediate Python developer who wants to build production LLM agents.",
+        "difficulty": "medium",
+        "expected": "A project-based roadmap covering prompting, tool use, agent orchestration, evaluation, deployment, and a capstone.",
+        "model": "gemini-3-flash-preview",
+        "provider": "google-adk",
+        "repetition": 1,
+        "response": "This roadmap is designed for an **intermediate Python developer** with a background in backend APIs. You will transition from making simple LLM API calls to building complex, autonomous agents that can use tools, maintain state, and be evaluated for production readiness.\n\n### **Overview**\n*   **Goal:** Build, evaluate, and deploy a production-grade LLM agent.\n*   **Duration:** 8 Weeks (8 hours/week = 64 hours total).\n*   **Focus:** Logic orchestration over \"magic\" prompts; tool-calling; and rigorous evaluation.\n*   **Budget:** Minimal. Uses local models (Ollama) and free tiers of LangSmith/Pinecone.\n\n---\n\n### **Prerequisites**\n*   **Python:** Proficiency in `asyncio`, decorators, and type hinting (`Pydantic`).\n*   **Backend:** Experience with FastAPI or Flask and RESTful principles.\n*   **Environment:** A code editor (VS Code/Cursor) and a basic understanding of Docker.\n\n---\n\n### **Weekly Plan**\n\n#### **Week 1: Foundations (LLM APIs & Structured Output)**\n*   **Focus:** Moving beyond strings to structured data.\n*   **Learning:** Tokenization, temperature, and JSON mode.\n*   **Task:** Use `instructor` or `PydanticAI` to force an LLM to return valid JSON for a backend schema.\n*   **Deliverable:** A script that extracts structured data from a messy customer email.\n\n#### **Week 2: Guided Practice (RAG & Memory)**\n*   **Focus:** Giving the agent context and persistence.\n*   **Learning:** Embeddings, vector databases (ChromaDB), and \"Windowed\" vs. \"Summary\" memory.\n*   **Task:** Build a CLI tool that \"remembers\" previous interactions and queries a local Markdown folder for answers.\n*   **Deliverable:** A local \"Second Brain\" CLI bot.\n\n#### **Week 3: Capstone Project (Architecting the Agent)**\n*   **Focus:** Planning a multi-step agent.\n*   **Learning:** ReAct (Reason + Act) pattern vs. Plan-and-Execute.\n*   **Task:** Define your Capstone: A \"Support Engineer Agent\" that can query a DB, check API status, and draft a response.\n*   **Deliverable:** System architecture diagram and defined \"User Stories\" for the agent.\n\n#### **Week 4: Prompting and Evaluation (The \"Science\" Phase)**\n*   **Focus:** Prompt versioning and measuring performance.\n*   **Learning:** Few-shot prompting, Chain of Thought, and evaluation frameworks (e.g., RAGAS or G-Eval).\n*   **Task:** Set up `LangSmith` (free tier) to trace your agent\u2019s reasoning steps.\n*   **Deliverable:** An \"Eval Suite\" that tests 10 edge cases and scores the agent's accuracy.\n\n#### **Week 5: Tool Use (Function Calling)**\n*   **Focus:** Connecting the agent to the real world.\n*   **Learning:** OpenAI/Anthropic tool schemas, error handling in tools, and sandbox execution.\n*   **Task:** Create a tool that allows the agent to fetch live weather data or query a mock SQL database.\n*   **Deliverable:** An agent that successfully handles a \"failed\" tool call (e.g., API 404) without crashing.\n\n#### **Week 6: Agent Orchestration (LangGraph/State Machines)**\n*   **Focus:** Managing complex, non-linear workflows.\n*   **Learning:** State management, cycles (loops), and human-in-the-loop (HITL).\n*   **Task:** Rebuild your Capstone logic using **LangGraph**. Implement a \"checkpoint\" where a human must approve a high-cost action.\n*   **Deliverable:** A state-machine graph of your agent's logic.\n\n#### **Week 7: Capstone Implementation (The Build)**\n*   **Focus:** Integration and hardening.\n*   **Task:** Combine Week 5's tools and Week 6's orchestration into the full Support Agent.\n*   **Deliverable:** A fully functional Python application where the agent solves a multi-step support ticket autonomously.\n\n#### **Week 8: Review & Portfolio Polish**\n*   **Focus:** Deployment and observability.\n*   **Learning:** Streaming responses (FastAPI), Dockerizing the agent, and cost monitoring.\n*   **Task:** Wrap the agent in a FastAPI endpoint and write a README explaining your \"Eval\" results.\n*   **Deliverable:** GitHub Repository + 2-minute demo video + Reflection post.\n\n---\n\n### **Project Milestones**\n1.  **The Parser (W1):** Extracting a Python `Class` from an LLM response.\n2.  **The Memory Bank (W2):** A persistent chat history that survives script restarts.\n3.  **The Graph (W6):** A visualized workflow showing the agent \"thinking\" and \"routing.\"\n4.  **The Capstone (W7-8):** \"The Support Engineer\" \u2013 Tools: SQL, Docs search, Email drafter.\n\n---\n\n### **Resources**\n*   **Library (Orchestration):** [LangGraph Documentation](https://langchain-ai.github.io/langgraph/) (The industry standard for production).\n*   **Library (Structured Data):** [Instructor](https://github.com/jxnl/instructor) (Best for intermediate Python devs).\n*   **Local LLMs:** [Ollama](https://ollama.com/) (Run Llama 3 locally to save API costs).\n*   **Observability:** [LangSmith](https://www.langchain.com/langsmith) (Crucial for debugging agent \"thoughts\").\n*   **Course (Free):** [DeepLearning.ai - AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/).\n\n---\n\n### **Assessment Checkpoints**\n\n| Week | Checkpoint | Success Criteria |\n| :--- | :--- | :--- |\n| **1** | **Foundations** | Can you handle a JSON decoding error from an LLM response? |\n| **2** | **Guided Practice** | Can your agent retrieve a specific fact from a 10-page PDF? |\n| **4** | **Evaluation** | Do you have a CSV of \"Ground Truth\" answers to test your prompt changes? |\n| **6** | **Orchestration** | Does the agent stop and ask for permission before performing a \"write\" action? |\n| **8** | **Final Review** | Can the agent handle 3 concurrent requests via a FastAPI endpoint? |\n\n### **Risk Management (Pace)**\n*   **Stuck on Prompts?** Limit prompt tuning to 1 hour/week. Focus on **logic** (Python code) rather than finding \"perfect words.\"\n*   **Too Complex?** If LangGraph feels too heavy by Week 6, switch to a simple `while` loop with a `switch` statement for tool routing.",
+        "task_category": "learning_roadmap"
+      },
+      "outcome": "usable_roadmap",
+      "reward": null,
+      "success": true,
+      "task_id": "roadmap-agent-engineer"
+    },
+    {
+      "after_state": {
+        "complete": 0.8999999999999999,
+        "partial": 0.050000000000000086,
+        "weak": 0.05
+      },
+      "before_state": {
+        "complete": 0.34,
+        "partial": 0.33,
+        "weak": 0.33
+      },
+      "cost": 0.0,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "assess_learner_profile",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "select_learning_modules",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "build_weekly_schedule",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "design_assessment_checkpoints",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {
+            "provider": "google-adk"
+          },
+          "name": "gemini-3-flash-preview",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": null,
+      "metadata": {
+        "agent_name": "google-adk-learning-roadmap",
+        "benchmark_prompt": "Create a 10-week roadmap for an Excel analyst learning Python data analysis and dashboards.",
+        "difficulty": "easy",
+        "expected": "A beginner roadmap covering Python basics, pandas, visualization, dashboard projects, and assessment checkpoints.",
+        "model": "gemini-3-flash-preview",
+        "provider": "google-adk",
+        "repetition": 1,
+        "response": "This roadmap is designed for an Excel power user transitioning into a Python-based Data Analyst role. We will focus on translating Excel concepts (VLOOKUPs, Pivot Tables, Charts) into Python code using the **Pandas**, **Seaborn**, and **Streamlit** libraries.\n\n---\n\n### **Overview**\n*   **Goal:** Move from manual spreadsheet reporting to automated Python scripts and interactive web dashboards.\n*   **Duration:** 10 Weeks (6 hours per week).\n*   **Outcome:** A functional, interactive data dashboard hosted on the web (Streamlit) showcasing a full analysis of a real-world dataset.\n\n### **Prerequisites**\n*   **Excel Mastery:** Understanding of cell references, VLOOKUP/XLOOKUP, and Pivot Tables.\n*   **Software:** Install [Anaconda](https://www.anaconda.com/) or [VS Code](https://code.visualstudio.com/) with the Python extension.\n*   **Mindset:** Moving from \"seeing the data in cells\" to \"manipulating data in memory.\"\n\n---\n\n### **Weekly Plan**\n\n#### **Phase 1: The Python Foundation**\n*   **Week 1: Python Foundations (The \"Cell\" Logic)**\n    *   **Focus:** Variables, Data Types (Strings, Integers, Floats), and Lists.\n    *   **Excel Analog:** Thinking of a Variable as a named cell and a List as a column.\n    *   **Deliverable:** A script that calculates sales tax for a list of prices.\n*   **Week 2: Prerequisite Refresh (Control Flow)**\n    *   **Focus:** `if/else` statements and `for` loops.\n    *   **Excel Analog:** `IF()` functions and dragging formulas down a column.\n    *   **Deliverable:** A logic script that categorizes a list of \"Sales\" into \"High,\" \"Medium,\" or \"Low.\"\n\n#### **Phase 2: Data Manipulation (The Pandas Era)**\n*   **Week 3: Guided Practice (Pandas Basics)**\n    *   **Focus:** Loading CSVs/Excel files, `.head()`, `.info()`, and selecting columns.\n    *   **Deliverable:** Load a sales dataset and print the top 10 rows and summary statistics.\n*   **Week 4: Capstone Kickoff & Data Preparation I**\n    *   **Focus:** Filtering data and handling missing values (`NaN`).\n    *   **Excel Analog:** Using \"Filter\" buttons and \"Find & Replace\" for blanks.\n    *   **Deliverable:** A cleaned version of your chosen Capstone dataset.\n*   **Week 5: Data Preparation II (The VLOOKUP Equivalent)**\n    *   **Focus:** Merging DataFrames (`pd.merge`) and GroupBy (Pivot Tables).\n    *   **Deliverable:** Join a \"Sales\" table with a \"Category\" table and calculate total revenue by category.\n\n#### **Phase 3: Analysis & Visualization**\n*   **Week 6: Model Evaluation (Trend Analysis & Stats)**\n    *   **Focus:** Basic descriptive statistics (`.describe()`) and Correlation.\n    *   **Excel Analog:** Analysis ToolPak / Correlation matrix.\n    *   **Deliverable:** A report identifying the strongest correlation between two variables in your data.\n*   **Week 7: Deployment Basics (Introduction to Streamlit)**\n    *   **Focus:** Converting a script into a local web app. Using `st.write()` and `st.pyplot()`.\n    *   **Deliverable:** A \"Hello World\" dashboard that displays a table and a simple bar chart.\n\n#### **Phase 4: Capstone & Polishing**\n*   **Week 8: Advanced Visualization**\n    *   **Focus:** Building interactive charts with Plotly or Seaborn.\n    *   **Excel Analog:** Creating \"Slicers\" for dynamic charts.\n    *   **Deliverable:** 3-4 key visualizations for your Capstone project.\n*   **Week 9: Dashboard Refinement**\n    *   **Focus:** Adding sidebars, sliders, and dropdowns to the Streamlit app.\n    *   **Deliverable:** A fully functional interactive dashboard running on your local machine.\n*   **Week 10: Review & Portfolio Polish**\n    *   **Focus:** Documentation (README) and publishing the app via Streamlit Cloud or GitHub.\n    *   **Deliverable:** A public link to your dashboard and a 1-page reflection on the Excel-to-Python transition.\n\n---\n\n### **Projects**\n1.  **Mini-Project (Week 3):** The \"Automatic Formatter\" \u2014 A script that takes a messy Excel file and outputs a cleaned version.\n2.  **Capstone Project (Weeks 4-10):** \"The Interactive Business Review\" \u2014 A dashboard using a dataset (e.g., [Kaggle Ecommerce Data](https://www.kaggle.com/datasets)) that allows users to filter by region, date, and product category to see real-time KPIs.\n\n---\n\n### **Resources (Free)**\n*   **Pandas Documentation:** [10 Minutes to Pandas](https://pandas.pydata.org/docs/user_guide/10min.html)\n*   **FreeCodeCamp:** [Scientific Computing with Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/) (Foundations)\n*   **YouTube:** [Corey Schafer's Pandas Series](https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS)\n*   **Dashboarding:** [Streamlit Get Started Docs](https://docs.streamlit.io/library/get-started)\n*   **Datasets:** [Kaggle Datasets](https://www.kaggle.com/datasets) or [Google Dataset Search](https://datasetsearch.google.com/).\n\n---\n\n### **Assessment Checkpoints**\n1.  **Diagnostic Self-Assessment (Week 0):** Can you explain a Pivot Table? (If yes, proceed to Week 1).\n2.  **Checkpoint: Foundations (Week 2):** Can you write a loop that prints only numbers greater than 50 from a list?\n3.  **Checkpoint: Guided Practice (Week 4):** Can you load a CSV and filter for a specific date range without using Excel?\n4.  **Checkpoint: Capstone Prep (Week 7):** Is your data cleaned and merged? Does it have at least 2 tables joined?\n5.  **Final Capstone Review (Week 10):** Does the dashboard load? Do the filters update the charts? Can a non-technical user understand the insights?",
+        "task_category": "learning_roadmap"
+      },
+      "outcome": "usable_roadmap",
+      "reward": null,
+      "success": true,
+      "task_id": "roadmap-data-analyst"
+    },
+    {
+      "after_state": {
+        "complete": 0.86,
+        "partial": 0.09000000000000001,
+        "weak": 0.05
+      },
+      "before_state": {
+        "complete": 0.34,
+        "partial": 0.33,
+        "weak": 0.33
+      },
+      "cost": 0.0,
+      "events": [
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "assess_learner_profile",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "select_learning_modules",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "build_weekly_schedule",
+          "timestamp": null
+        },
+        {
+          "kind": "tool",
+          "metadata": {},
+          "name": "design_assessment_checkpoints",
+          "timestamp": null
+        },
+        {
+          "kind": "llm",
+          "metadata": {
+            "provider": "google-adk"
+          },
+          "name": "gemini-3-flash-preview",
+          "timestamp": null
+        }
+      ],
+      "latency_ms": null,
+      "metadata": {
+        "agent_name": "google-adk-learning-roadmap",
+        "benchmark_prompt": "Create a 6-week roadmap for a React developer learning AI-assisted frontend application development.",
+        "difficulty": "medium",
+        "expected": "A frontend-focused roadmap covering AI UX, API integration, state management, evaluation, and portfolio work.",
+        "model": "gemini-3-flash-preview",
+        "provider": "google-adk",
+        "repetition": 1,
+        "response": "This 6-week roadmap is designed for an intermediate React developer to transition into building \"AI-native\" user interfaces. Given your 5-hour-per-week constraint, the focus is on **high-leverage tools** (like the Vercel AI SDK) and **UX patterns** rather than training models from scratch.\n\n---\n\n### **Overview**\nYou will evolve from making simple API calls to building a sophisticated, stateful AI application. By the end of this roadmap, you will understand how to manage streaming responses, handle LLM latency with polished UX, and implement evaluation loops to track AI performance.\n\n*   **Total Time Commitment:** 30 Hours (5 hours/week)\n*   **Goal:** Build a \"Smart Content Editor\" with real-time AI assistance and a feedback-driven evaluation system.\n\n---\n\n### **Prerequisites**\n*   **Technical:** Proficiency in React (Hooks, State), basic Next.js (recommended for API routes), and basic TypeScript.\n*   **Accounts:** OpenAI API Key or Anthropic API Key (budget ~$20 for tokens).\n*   **Environment:** Node.js installed, VS Code.\n\n---\n\n### **Weekly Plan**\n\n#### **Week 1: Foundations & The Streaming UI**\n*   **Focus:** Understanding LLM APIs and the \"Streaming\" paradigm.\n*   **Topics:** Prompt engineering for UI, handling server-sent events (SSE).\n*   **Deliverable:** A simple \"Component Generator\" that takes a text prompt and renders a styled React card.\n*   **Time Allocation:** 2h Learning, 3h Building.\n\n#### **Week 2: Guided Practice: The Vercel AI SDK**\n*   **Focus:** Using industry-standard hooks (`useChat`, `useCompletion`).\n*   **Topics:** Abstracting the API layer, managing chat history, handling stop sequences.\n*   **Deliverable:** A functional Chat Sidebar that maintains context and allows \"Regenerate Response\" functionality.\n*   **Time Allocation:** 1.5h Learning, 3.5h Building.\n\n#### **Week 3: Interface Fundamentals: Beyond the Chatbox**\n*   **Focus:** AI UX Design Patterns.\n*   **Topics:** Inline AI (Ghost text), Contextual Menus (Highlight to Edit), and Optimistic UI.\n*   **Deliverable:** An interactive text area where highlighting text triggers an AI \"Rewrite\" popup.\n*   **Time Allocation:** 2h Learning, 3h Building.\n\n#### **Week 4: Latency & Feedback Loops**\n*   **Focus:** Making AI feel fast and gathering data.\n*   **Topics:** Skeleton loaders, streaming progress bars, and \"Thumbs Up/Down\" feedback components.\n*   **Deliverable:** Integration of feedback buttons on AI responses and a \"Processing\" state that predicts completion time.\n*   **Time Allocation:** 1h Learning, 4h Building.\n\n#### **Week 5: State Management & Context Windows**\n*   **Focus:** Memory and token management.\n*   **Topics:** Pruning history to fit context windows, persisting AI threads in LocalStorage/Database.\n*   **Deliverable:** A \"Session Manager\" that allows users to switch between multiple AI writing drafts without losing state.\n*   **Time Allocation:** 2h Learning, 3h Building.\n\n#### **Week 6: Evaluation & Deployment**\n*   **Focus:** Observability and \"Production-ready\" AI.\n*   **Topics:** Simple evaluation (comparing two prompts), LangSmith or Helicone basics, and deploying to Vercel.\n*   **Deliverable:** A deployed version of your \"Smart Content Editor\" with a basic dashboard showing \"Success Rate\" based on user feedback.\n*   **Time Allocation:** 2h Learning, 3h Building.\n\n---\n\n### **Projects**\n\n1.  **Mini-Project (Week 1-2): \"The Styled Component Lab\"**\n    *   Build a tool where you type \"A modern blue button\" and the AI generates the Tailwind CSS classes and React code in real-time.\n2.  **Capstone Project (Week 3-6): \"The AI-Native Ghostwriter\"**\n    *   A markdown editor that doesn't just chat, but assists.\n    *   **Features:** Inline autocompletion (Tab to complete), \"Tone Transformer\" (change text from formal to casual), and a \"History Sidebar\" with version control for AI edits.\n\n---\n\n### **Resources**\n\n*   **Documentation:** [Vercel AI SDK Docs](https://sdk.vercel.ai/docs) (Primary resource for React integration).\n*   **UX Reference:** [AI UX Patterns](https://www.uxofai.com/) and [Apple\u2019s Human Interface Guidelines for AI](https://developer.apple.com/design/human-interface-guidelines/machine-learning).\n*   **Tools:**\n    *   **Frontend:** Next.js, Tailwind CSS, Lucide React (Icons).\n    *   **AI:** OpenAI GPT-4o-mini (cost-effective for dev).\n    *   **Observability:** [Helicone](https://www.helicone.ai/) (Free tier) to track your API calls.\n\n---\n\n### **Assessment Checkpoints**\n\n*   **[Week 1] Diagnostic Self-Assessment:** Can you explain the difference between a standard JSON fetch and a ReadableStream?\n*   **[Week 2] Foundations:** Does your UI update incrementally as the AI \"types,\" or does it wait for the full response? (Streaming is the goal).\n*   **[Week 4] Interface Fundamentals:** Can your application handle a 10-second delay gracefully without the user thinking it crashed?\n*   **[Week 6] Final Capstone Review:** \n    *   Does the app have a \"Feedback Loop\" (e.g., storing whether a user accepted an AI suggestion)?\n    *   Is the prompt logic separated from the UI components?\n    *   Is the app deployed and functional on a public URL?",
+        "task_category": "learning_roadmap"
+      },
+      "outcome": "usable_roadmap",
+      "reward": null,
+      "success": true,
+      "task_id": "roadmap-frontend-ai"
+    }
+  ]
+}

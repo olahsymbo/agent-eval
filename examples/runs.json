@@ -1,0 +1,20 @@
+{
+  "runs": [
+    {
+      "task": "qa-001",
+      "success": true,
+      "cost": 0.08,
+      "trajectory": ["search", "read", "answer"],
+      "before": {"correct": 0.45, "distractor": 0.55},
+      "after": {"correct": 0.92, "distractor": 0.08}
+    },
+    {
+      "task": "qa-001",
+      "success": false,
+      "cost": 0.16,
+      "trajectory": ["search", "search", "read", "read", "answer"],
+      "before": {"correct": 0.45, "distractor": 0.55},
+      "after": {"correct": 0.52, "distractor": 0.48}
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "qa-001",
+    "category": "factual",
+    "difficulty": "easy",
+    "difficulty_score": 0.2,
+    "prompt": "What is the capital of France?",
+    "expected": "Paris"
+  },
+  {
+    "id": "qa-002",
+    "category": "factual",
+    "difficulty": "easy",
+    "difficulty_score": 0.25,
+    "prompt": "Who wrote Things Fall Apart?",
+    "expected": "Chinua Achebe"
+  },
+  {
+    "id": "mh-001",
+    "category": "multi_hop",
+    "difficulty": "medium",
+    "difficulty_score": 0.55,
+    "prompt": "Find the author of a book, then identify the country where that author was born.",
+    "expected": "Requires two-step evidence gathering."
+  },
+  {
+    "id": "mh-002",
+    "category": "multi_hop",
+    "difficulty": "medium",
+    "difficulty_score": 0.6,
+    "prompt": "Compare two companies' founding years and determine which is older.",
+    "expected": "Requires retrieval and comparison."
+  },
+  {
+    "id": "code-001",
+    "category": "coding",
+    "difficulty": "medium",
+    "difficulty_score": 0.6,
+    "prompt": "Write a Python function that removes duplicates while preserving order.",
+    "expected": "Stable deduplication function."
+  },
+  {
+    "id": "code-002",
+    "category": "coding",
+    "difficulty": "hard",
+    "difficulty_score": 0.8,
+    "prompt": "Debug a function that fails on empty input and nested lists.",
+    "expected": "Identify edge cases and provide a corrected implementation."
+  }
+]
