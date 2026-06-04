@@ -241,6 +241,12 @@ evaluator = EntropyEvaluator(
 )
 ```
 
+Concept guides:
+
+- [docs/concepts/overview.md](docs/concepts/overview.md)
+- [docs/concepts/metrics.md](docs/concepts/metrics.md)
+- [docs/concepts/cost.md](docs/concepts/cost.md)
+
 ## Benchmark
 
 Any callable that accepts a `BenchmarkTask` and returns an `AgentRun` or

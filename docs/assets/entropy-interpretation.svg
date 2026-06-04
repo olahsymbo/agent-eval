@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Interpreting entropy in agent behavior</title>
+  <desc id="desc">A low-to-high entropy scale showing focus, adaptive branching, and noisy behavior, plus an information gain example.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5f7fb; }
+      .axis { stroke: #24313d; stroke-width: 5; stroke-linecap: round; }
+      .tick { stroke: #24313d; stroke-width: 3; }
+      .card { fill: #ffffff; stroke: #24313d; stroke-width: 2; }
+      .focus { fill: #2f7d57; }
+      .branch { fill: #d19a2a; }
+      .chaos { fill: #b84a35; }
+      .state { fill: #dbeafe; stroke: #24313d; stroke-width: 2; }
+      .state2 { fill: #c8ead6; stroke: #24313d; stroke-width: 2; }
+      .text { fill: #1f2933; font-family: Arial, Helvetica, sans-serif; }
+      .title { font-size: 22px; font-weight: 700; }
+      .label { font-size: 17px; font-weight: 700; }
+      .small { font-size: 14px; }
+      .arrow { stroke: #24313d; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#24313d" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="960" height="420" />
+  <text class="text title" x="40" y="48">Entropy is a behavioral signal</text>
+  <text class="text small" x="40" y="75">Higher is not automatically better; interpretation depends on success, cost, and state change.</text>
+
+  <line class="axis" x1="90" y1="155" x2="870" y2="155" />
+  <line class="tick" x1="120" y1="140" x2="120" y2="170" />
+  <line class="tick" x1="480" y1="140" x2="480" y2="170" />
+  <line class="tick" x1="840" y1="140" x2="840" y2="170" />
+
+  <rect class="card" x="50" y="205" width="250" height="110" rx="8" />
+  <circle class="focus" cx="82" cy="240" r="13" />
+  <text class="text label" x="104" y="246">Low entropy</text>
+  <text class="text small" x="75" y="275">Focused and repeatable</text>
+  <text class="text small" x="75" y="298">Can also be brittle</text>
+
+  <rect class="card" x="355" y="205" width="250" height="110" rx="8" />
+  <circle class="branch" cx="387" cy="240" r="13" />
+  <text class="text label" x="409" y="246">Medium entropy</text>
+  <text class="text small" x="380" y="275">Adaptive branching</text>
+  <text class="text small" x="380" y="298">Often useful when outcomes stay stable</text>
+
+  <rect class="card" x="660" y="205" width="250" height="110" rx="8" />
+  <circle class="chaos" cx="692" cy="240" r="13" />
+  <text class="text label" x="714" y="246">High entropy</text>
+  <text class="text small" x="685" y="275">Broad exploration</text>
+  <text class="text small" x="685" y="298">Can become noisy or expensive</text>
+
+  <rect class="state" x="205" y="345" width="165" height="48" rx="8" />
+  <text class="text small" x="225" y="374">uncertain before</text>
+  <path class="arrow" d="M380 369 C430 369 460 369 510 369" />
+  <rect class="state2" x="520" y="345" width="180" height="48" rx="8" />
+  <text class="text small" x="543" y="374">concentrated after</text>
+  <text class="text small" x="720" y="374">information gain</text>
+</svg>
