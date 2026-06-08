@@ -26,6 +26,12 @@ Use EEA when you want to compare agent behavior beyond success rate:
 
 Requires Python 3.12 or newer.
 
+From PyPI:
+
+```
+pip3 install entropy-agent-eval
+```
+
 From GitHub:
 
 ```bash
