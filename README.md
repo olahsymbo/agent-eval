@@ -30,6 +30,10 @@ From PyPI:
 
 ```
 pip3 install entropy-agent-eval
+
+pip install "entropy-agent-eval[langchain]"  # use with langchain
+
+pip install "entropy-agent-eval[google-adk]"  # with Google ADK 
 ```
 
 From GitHub:
@@ -151,18 +155,6 @@ For richer logs, use explicit events:
   "success": true
 }
 ```
-
-### Cost
-
-`cost` is user or framework supplied. It can mean USD, total tokens,
-token-normalized cost, tool-call cost, compute cost, or any other numeric
-penalty you want to apply consistently across compared runs.
-
-The evaluator reports it as `mean_cost` and subtracts it inside
-`EntropicAgentScore`. If cost is unknown or irrelevant, omit it or leave it as
-`0.0`.
-
-Full guide: [docs/concepts/cost.md](docs/concepts/cost.md)
 
 ## Custom Agent Integration
 
