@@ -31,9 +31,9 @@ From PyPI:
 ```
 pip3 install entropy-agent-eval
 
-pip install "entropy-agent-eval[langchain]"  # use with langchain
+pip3 install "entropy-agent-eval[langchain]"  # use with langchain
 
-pip install "entropy-agent-eval[google-adk]"  # with Google ADK 
+pip3 install "entropy-agent-eval[google-adk]"  # with Google ADK 
 ```
 
 From GitHub:
