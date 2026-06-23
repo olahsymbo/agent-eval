@@ -11,7 +11,7 @@
 - a configurable Entropic Agent Score 
 
 Any agent library can integrate by converting its trace events into `AgentRun`
-records. Here is the original experimental paper: https://arxiv.org/pdf/2606.05872
+records. 
 
 ## Who This Is For
 
