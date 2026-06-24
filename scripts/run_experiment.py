@@ -20,7 +20,7 @@ from entropy_agent_eval.experiments.runner import run_experiment  # noqa: E402
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run the controlled EEA benchmark.")
+    parser = argparse.ArgumentParser(description="Run the controlled observability workload.")
     parser.add_argument("--tasks", default=str(ROOT / "experiments" / "tasks.json"))
     parser.add_argument("--output-dir", default=str(ROOT / "experiments" / "results"))
     parser.add_argument("--repetitions", type=int, default=3)
@@ -49,8 +49,7 @@ def main() -> int:
         print(
             f"{agent_name}: success={summary['success_rate']:.3f}, "
             f"action_entropy={summary['action_entropy']:.3f}, "
-            f"trajectory_entropy={summary['trajectory_entropy']:.3f}, "
-            f"EAS={summary['entropic_agent_score']:.3f}"
+            f"trajectory_entropy={summary['trajectory_entropy']:.3f}"
         )
     return 0
 

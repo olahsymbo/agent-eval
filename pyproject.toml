@@ -4,14 +4,14 @@ build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "entropy-agent-eval"
-version = "0.1.10"
-description = "Entropy-based evaluation metrics for AI agent behavior, tools, trajectories, uncertainty reduction, and robustness."
+version = "0.1.11"
+description = "Entropy-based observability signals for AI agent traces, tools, trajectories, uncertainty reduction, and outcome stability."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 license = "MIT"
 authors = [{name = "olahsymbo"}]
-keywords = ["agents", "evaluation", "entropy", "llm", "langchain", "adk", "benchmark"]
+keywords = ["agents", "observability", "telemetry", "entropy", "llm", "langchain", "adk"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",

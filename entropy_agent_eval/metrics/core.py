@@ -56,18 +56,5 @@ def entropy_reduction(before: Sequence[float], after: Sequence[float], base: flo
     return shannon_entropy(before, base=base) - shannon_entropy(after, base=base)
 
 
-def exploration_efficiency(success_rate: float, entropy_value: float, epsilon: float = 1e-9) -> float:
-    """Success per bit of entropy.
-
-    The epsilon avoids division by zero while preserving the intended ranking.
-    """
-
-    if not math.isfinite(success_rate) or success_rate < 0 or success_rate > 1:
-        raise ValueError("success_rate must be in [0, 1]")
-    if not math.isfinite(entropy_value) or entropy_value < 0:
-        raise ValueError("entropy_value must be a finite non-negative number")
-    return success_rate / max(entropy_value, epsilon)
-
-
 def _numeric(values: Sequence[object]) -> bool:
     return all(isinstance(value, (int, float)) for value in values)

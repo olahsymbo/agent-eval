@@ -1,45 +1,38 @@
-# Entropy-Based Evaluation of AI Agents
+# Entropy-Based Observability for AI Agent Behavior
 
-`entropy-agent-eval` implements **EEA**, a toolkit for measuring agent behavior with entropy metrics:
+`entropy-agent-eval` implements **EOA**, a lightweight toolkit for turning agent traces into entropy-based observability telemetry. It does not score or rank agents. It helps you inspect how agent behavior changes across actions, tools, trajectories, uncertainty states, and outcomes.
 
-- action entropy for action-selection uncertainty
-- trajectory entropy for strategy diversity
-- tool entropy for tool-use specialization
-- information gain for uncertainty reduction
+The package computes descriptive signals such as:
+
+- action entropy for action-selection dispersion
+- trajectory entropy for behavioral path diversity
+- tool entropy for tool-use concentration
+- information gain for optional before/after uncertainty states
 - entropy curves for temporal behavior
 - robustness summaries across repeated runs
-- a configurable Entropic Agent Score 
 
-Any agent library can integrate by converting its trace events into `AgentRun`
-records. 
+Any agent library can integrate by converting its trace events into `AgentRun` records.
+
+Reference: https://arxiv.org/pdf/2606.05872
 
 ## Who This Is For
 
-Use EEA when you want to compare agent behavior beyond success rate:
+Use EOA when you want trace-level behavioral visibility beyond final success rate:
 
-- framework authors who want behavioral diagnostics
-- application teams evaluating agent changes before deployment
-- researchers comparing ReAct, planner, tool-using, or multi-agent systems
-- observability teams turning traces into evaluation metrics
+- framework authors inspecting runtime behavior
+- application teams monitoring prompt, tool, or model changes
+- researchers studying ReAct, planner, tool-using, or multi-agent traces
+- observability teams turning stored traces into diagnostic telemetry
 
 ## Install
 
 Requires Python 3.12 or newer.
 
-From PyPI:
-
-```
-pip3 install entropy-agent-eval
-
-pip3 install "entropy-agent-eval[langchain]"  # use with langchain
-
-pip3 install "entropy-agent-eval[google-adk]"  # with Google ADK 
-```
-
-From GitHub:
-
 ```bash
-pip install git+https://github.com/olahsymbo/entropy-agent-eval.git
+pip install entropy-agent-eval
+pip install "entropy-agent-eval[langchain]"
+pip install "entropy-agent-eval[google-adk]"
+pip install "entropy-agent-eval[plots]"
 ```
 
 For local development:
@@ -48,39 +41,10 @@ For local development:
 poetry install --with dev
 ```
 
-Optional plotting support:
-
-```bash
-pip install "entropy-agent-eval[plots]"
-```
-
-Build source and wheel distributions:
-
-```bash
-poetry build
-```
-
-Install a local wheel:
-
-```bash
-pip install dist/entropy_agent_eval-v0.1.1-py3-none-any.whl
-```
-
-## Release
-
-Package builds are handled by Poetry. To cut a release:
-
-```bash
-poetry version patch
-git tag v0.1.1
-git push origin main --tags
-```
-
-
 ## Quick Start
 
 ```python
-from entropy_agent_eval import AgentRun, EntropyEvaluator
+from entropy_agent_eval import AgentRun, EntropyObserver
 
 runs = [
     AgentRun.from_mapping(
@@ -95,7 +59,7 @@ runs = [
     )
 ]
 
-report = EntropyEvaluator().evaluate(runs)
+report = EntropyObserver().observe(runs)
 print(report.as_dict())
 ```
 
@@ -106,30 +70,23 @@ eea examples/runs.json
 eea examples/runs.json --per-run
 ```
 
-The CLI accepts JSON objects with a top-level `runs` list, raw JSON lists, or
-JSONL files.
+The CLI accepts JSON objects with a top-level `runs` list, raw JSON lists, or JSONL files. It emits observability telemetry as JSON.
 
 ## Integration Model
 
-You do not have to export JSON logs. JSON is only one supported path.
-
-EEA needs one thing: normalized traces as `AgentRun` objects. Those traces can
-come from live callbacks, custom wrappers, databases, observability systems,
-JSON/JSONL files, or benchmark harnesses.
+EOA needs one thing: normalized traces as `AgentRun` objects. Those traces can come from live callbacks, custom wrappers, databases, observability systems, JSON/JSONL files, or workload harnesses.
 
 ```text
 LangChain / Google ADK / custom agent / stored trace
         ↓
 AgentRun
         ↓
-EntropyEvaluator
+EntropyObserver
         ↓
-entropy metrics + Entropic Agent Score
+entropy-based observability signals
 ```
 
 ## Data Contract
-
-The central integration type is `AgentRun`:
 
 ```json
 {
@@ -159,7 +116,7 @@ For richer logs, use explicit events:
 ## Custom Agent Integration
 
 ```python
-from entropy_agent_eval import EntropyEvaluator
+from entropy_agent_eval import EntropyObserver
 from entropy_agent_eval.adapters import EventRecorder
 
 recorder = EventRecorder(task_id="task-123")
@@ -168,143 +125,27 @@ recorder.tool("python")
 recorder.action("answer")
 
 run = recorder.to_run(success=True, cost=0.04)
-print(EntropyEvaluator().evaluate([run]).as_dict())
+print(EntropyObserver().observe([run]).as_dict())
 ```
 
-Full guide: [docs/integrations/custom-agents.md](docs/integrations/custom-agents.md)
+## Reading Signals
 
-## LangChain Integration
+High entropy is not automatically good. Low entropy is not automatically bad. Entropy values are descriptive telemetry. They point to behavioral patterns that deserve trace inspection.
 
-```python
-from entropy_agent_eval.adapters.langchain import EntropyCallbackHandler
+- Low action entropy can indicate focus or rigidity.
+- High action entropy can indicate exploration or instability.
+- Low tool entropy can indicate specialization or overreliance.
+- High tool entropy can indicate broad search or tool thrashing.
+- Low outcome entropy across repeated runs can indicate stable outcomes.
 
-handler = EntropyCallbackHandler(task_id="lc-001")
+Use these signals alongside success, cost, latency, outcome quality, and qualitative trace review.
 
-# Pass `handler` in your LangChain config/callbacks.
-# result = chain.invoke(inputs, config={"callbacks": [handler]})
+## Documentation
 
-run = handler.to_run(success=True, cost=0.10)
-```
-
-Full guide: [docs/integrations/langchain.md](docs/integrations/langchain.md)
-
-## Google ADK-Style Event Integration
-
-```python
-from entropy_agent_eval.adapters.google_adk import runs_from_adk_events
-
-run = runs_from_adk_events(
-    "adk-001",
-    [
-        {"event_type": "tool", "tool_name": "Search"},
-        {"event_type": "model", "model": "gemini"},
-    ],
-    success=True,
-)
-```
-
-Full guide: [docs/integrations/google-adk.md](docs/integrations/google-adk.md)
-
-## Stored Trace Integration
-
-If your traces are already in a database, warehouse, or observability platform,
-export or query them into `AgentRun`-compatible dictionaries and evaluate them
-offline.
-
-Full guide: [docs/integrations/observability.md](docs/integrations/observability.md)
-
-## Metric Notes
-
-High entropy is not automatically good. EEA treats entropy as a behavioral
-signature:
-
-- low action entropy can mean focus or brittle determinism
-- medium entropy can indicate adaptive branching
-- high entropy can indicate exploration or chaos
-- successful agents should often reduce state entropy over time
-- robust agents can have moderate trajectory entropy with low outcome entropy
-
-`EntropicAgentScore` is configurable:
-
-```python
-from entropy_agent_eval import EntropicAgentScore, EntropyEvaluator
-
-evaluator = EntropyEvaluator(
-    EntropicAgentScore(
-        success_weight=2.0,
-        information_gain_weight=1.0,
-        exploration_efficiency_weight=0.5,
-        cost_weight=1.5,
-    )
-)
-```
-
-Concept guides:
-
-- [docs/concepts/overview.md](docs/concepts/overview.md)
-- [docs/concepts/metrics.md](docs/concepts/metrics.md)
-- [docs/concepts/cost.md](docs/concepts/cost.md)
-
-## Benchmark
-
-Any callable that accepts a `BenchmarkTask` and returns an `AgentRun` or
-compatible dictionary can be benchmarked:
-
-```python
-from entropy_agent_eval.benchmarks import QA_TASKS, run_benchmark
-
-def agent(task):
-    return {
-        "task_id": task.id,
-        "trajectory": ["think", "answer"],
-        "success": True,
-    }
-
-runs = run_benchmark(QA_TASKS, agent)
-```
-
-## Controlled Benchmark
-
-The [experiments](experiments/) directory contains a controlled benchmark that
-compares reference agent patterns across factual QA, multi-hop, and coding
-tasks.
-
-```bash
-poetry run python scripts/run_experiment.py
-```
-
-The script writes normalized runs and per-agent summaries to
-`experiments/results/`.
-
-## Learning Roadmap Agent Experiment
-
-The project also includes a framework-backed experiment for a Learning Roadmap
-Agent. It can run with LangChain, Google ADK, or both when the optional
-dependencies and API keys are installed.
-
-```bash
-pip install "entropy-agent-eval[langchain]"
-export OPENAI_API_KEY="..."
-poetry run python scripts/run_learning_roadmap_experiment.py --provider langchain
-```
-
-```bash
-pip install "entropy-agent-eval[google-adk]"
-export GOOGLE_API_KEY="..."
-poetry run python scripts/run_learning_roadmap_experiment.py --provider google-adk
-```
-
-The roadmap experiment runner also reads `.env` automatically. For Google ADK,
-set `GOOGLE_API_KEY` or `GEMINI_API_KEY`.
-
-Full guide: [docs/experiments/learning-roadmap-agent.md](docs/experiments/learning-roadmap-agent.md)
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). New adapters are welcome, especially for
-frameworks that can expose tool calls, model calls, actions, costs, outcomes,
-and uncertainty states.
-
-## License
-
-MIT. See [LICENSE](LICENSE).
+- [Concept overview](docs/concepts/overview.md)
+- [Observability signals](docs/concepts/signals.md)
+- [Cost](docs/concepts/cost.md)
+- [Custom agents](docs/integrations/custom-agents.md)
+- [LangChain](docs/integrations/langchain.md)
+- [Google ADK](docs/integrations/google-adk.md)
+- [Stored traces](docs/integrations/observability.md)

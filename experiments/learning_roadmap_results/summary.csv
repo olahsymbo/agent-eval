@@ -1,2 +1,2 @@
-agent,runs,success_rate,mean_cost,mean_latency_ms,mean_trajectory_length,action_entropy,trajectory_entropy,tool_entropy,information_gain,exploration_efficiency,entropic_agent_score
-google-adk-learning-roadmap,3,1.0,0.0,0.0,5.0,2.321928094887362,0.0,2.0,0.9668620272945941,0.43067655807339306,2.397538585367987
+agent,runs,success_rate,mean_cost,mean_latency_ms,mean_trajectory_length,action_entropy,trajectory_entropy,tool_entropy,information_gain
+google-adk-learning-roadmap,3,1.0,0.0,0.0,5.0,2.321928094887362,0.0,2.0,0.9668620272945941

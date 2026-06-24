@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Iterable, Mapping, Protocol
 
 from entropy_agent_eval.benchmarks import BenchmarkTask
-from entropy_agent_eval.evaluator import EntropyEvaluator
+from entropy_agent_eval.observer import EntropyObserver
 from entropy_agent_eval.io import dump_runs
 from entropy_agent_eval.models import AgentRun
 
@@ -63,17 +63,17 @@ def run_experiment(
 
 
 def summarize_by_agent(runs: Iterable[AgentRun]) -> dict[str, dict[str, object]]:
-    """Compute one EEA report per agent."""
+    """Compute one observability report per agent."""
 
     grouped: dict[str, list[AgentRun]] = {}
     for run in runs:
         agent_name = str(run.metadata.get("agent_name", "unknown"))
         grouped.setdefault(agent_name, []).append(run)
 
-    evaluator = EntropyEvaluator()
+    observer = EntropyObserver()
     summaries = {}
     for agent_name, agent_runs in sorted(grouped.items()):
-        report = evaluator.evaluate(agent_runs).as_dict()
+        report = observer.observe(agent_runs).as_dict()
         report["mean_latency_ms"] = _mean(
             run.latency_ms for run in agent_runs if run.latency_ms is not None
         )
@@ -105,8 +105,6 @@ def write_summary_csv(path: Path, summaries: dict[str, dict[str, object]]) -> No
         "trajectory_entropy",
         "tool_entropy",
         "information_gain",
-        "exploration_efficiency",
-        "entropic_agent_score",
     ]
     with path.open("w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)

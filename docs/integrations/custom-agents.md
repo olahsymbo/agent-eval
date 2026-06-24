@@ -4,17 +4,17 @@
 smallest integration is `EventRecorder`.
 
 ```python
-from entropy_agent_eval import EntropyEvaluator
+from entropy_agent_eval import EntropyObserver
 from entropy_agent_eval.adapters import EventRecorder
 
 recorder = EventRecorder(task_id="custom-001")
 
-recorder.tool("search", query="entropy metrics")
+recorder.tool("search", query="entropy signals")
 recorder.llm("planning-model")
 recorder.action("answer")
 
 run = recorder.to_run(success=True, cost=0.03, outcome="correct")
-report = EntropyEvaluator().evaluate([run])
+report = EntropyObserver().observe([run])
 print(report.as_dict())
 ```
 

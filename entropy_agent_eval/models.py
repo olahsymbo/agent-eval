@@ -44,9 +44,9 @@ class AgentEvent:
 class AgentRun:
     """A single task execution by an agent.
 
-    This is the integration boundary for EEA. Adapters for LangChain, Google ADK,
+    This is the integration boundary for EOA. Adapters for LangChain, Google ADK,
     OpenAI Agents SDK, custom ReAct loops, or stored JSON logs should produce this
-    type and then pass it to :class:`EntropyEvaluator`.
+    type and then pass it to :class:`EntropyObserver`.
     """
 
     task_id: str

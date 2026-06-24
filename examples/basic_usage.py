@@ -1,4 +1,4 @@
-from entropy_agent_eval import AgentRun, EntropyEvaluator, InformationState
+from entropy_agent_eval import AgentRun, EntropyObserver, InformationState
 
 
 runs = [
@@ -24,5 +24,5 @@ runs = [
     ),
 ]
 
-report = EntropyEvaluator().evaluate(runs)
+report = EntropyObserver().observe(runs)
 print(report.as_dict())

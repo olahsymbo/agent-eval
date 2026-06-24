@@ -1,6 +1,6 @@
 import pytest
 
-from entropy_agent_eval import AgentRun, EntropyEvaluator
+from entropy_agent_eval import AgentRun, EntropyObserver
 from entropy_agent_eval.adapters import EventRecorder
 
 
@@ -28,14 +28,14 @@ def test_evaluate_corpus():
         ),
     ]
 
-    report = EntropyEvaluator().evaluate(runs)
+    report = EntropyObserver().observe(runs)
 
     assert report.runs == 2
     assert report.success_rate == pytest.approx(0.5)
     assert report.action_entropy > 0
     assert report.trajectory_entropy == pytest.approx(1.0)
     assert report.information_gain > 0
-    assert report.entropic_agent_score is not None
+    assert not any("score" in key for key in report.as_dict())
 
 
 def test_event_recorder_integration_boundary():
@@ -45,11 +45,11 @@ def test_event_recorder_integration_boundary():
     recorder.action("answer")
 
     run = recorder.to_run(success=True, cost=0.03)
-    metrics = EntropyEvaluator().evaluate_run(run)
+    telemetry = EntropyObserver().observe_run(run)
 
     assert run.task_id == "custom"
-    assert metrics["trajectory"] == ["search", "gpt", "answer"]
-    assert metrics["success"] is True
+    assert telemetry["trajectory"] == ["search", "gpt", "answer"]
+    assert telemetry["success"] is True
 
 
 def test_agent_run_from_mapping_restores_metadata_field():

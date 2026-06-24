@@ -1,10 +1,7 @@
-import math
-
 import pytest
 
 from entropy_agent_eval.metrics import (
     entropy_reduction,
-    exploration_efficiency,
     normalized_entropy,
     rolling_entropy_curve,
     shannon_entropy,
@@ -33,8 +30,3 @@ def test_information_gain_positive_when_uncertainty_reduces():
 def test_rolling_entropy_curve_validates_window():
     with pytest.raises(ValueError):
         rolling_entropy_curve(["a"], 0)
-
-
-def test_exploration_efficiency_rejects_invalid_success_rate():
-    with pytest.raises(ValueError):
-        exploration_efficiency(math.nan, 1.0)

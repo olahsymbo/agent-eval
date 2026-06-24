@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
-  <title id="title">EEA trace-to-metrics flow</title>
-  <desc id="desc">Agent systems emit traces, traces are normalized into AgentRun records, and the evaluator produces entropy metrics and score summaries.</desc>
+  <title id="title">EOA trace-to-signals flow</title>
+  <desc id="desc">Agent systems emit traces, traces are normalized into AgentRun records, and the observer produces entropy-based observability signals.</desc>
   <defs>
     <style>
       .bg { fill: #f7f5ef; }
@@ -20,8 +20,8 @@
   </defs>
 
   <rect class="bg" x="0" y="0" width="960" height="420" />
-  <text class="text title" x="40" y="48">Entropy-based agent evaluation</text>
-  <text class="text small" x="40" y="75">Measure behavior from traces, not only final task success.</text>
+  <text class="text title" x="40" y="48">Entropy-based agent observability</text>
+  <text class="text small" x="40" y="75">Inspect behavior from traces, not only final task success.</text>
 
   <rect class="panel" x="40" y="120" width="210" height="150" rx="8" />
   <circle class="accent" cx="74" cy="154" r="13" />
@@ -43,13 +43,13 @@
 
   <rect class="panel" x="650" y="86" width="270" height="218" rx="8" />
   <circle class="accent2" cx="684" cy="126" r="13" />
-  <text class="text label" x="705" y="132">EntropyEvaluator</text>
+  <text class="text label" x="705" y="132">EntropyObserver</text>
   <text class="text small" x="680" y="168">action and tool entropy</text>
   <text class="text small" x="680" y="191">trajectory diversity</text>
   <text class="text small" x="680" y="214">information gain</text>
   <text class="text small" x="680" y="237">robustness summary</text>
-  <text class="text small" x="680" y="260">Entropic Agent Score</text>
+  <text class="text small" x="680" y="260">Telemetry Signals</text>
 
   <path class="arrow" d="M450 290 C450 333 520 350 675 350" />
-  <text class="text small" x="684" y="355">Compare agents, prompts, tools, or versions</text>
+  <text class="text small" x="684" y="355">Inspect agents, prompts, tools, or versions</text>
 </svg>

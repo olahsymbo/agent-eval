@@ -4,7 +4,7 @@ The Google ADK adapter accepts ADK-style event dictionaries and normalizes them
 into one `AgentRun`.
 
 ```python
-from entropy_agent_eval import EntropyEvaluator
+from entropy_agent_eval import EntropyObserver
 from entropy_agent_eval.adapters.google_adk import runs_from_adk_events
 
 events = [
@@ -21,7 +21,7 @@ run = runs_from_adk_events(
     outcome="correct",
 )
 
-report = EntropyEvaluator().evaluate([run])
+report = EntropyObserver().observe([run])
 print(report.as_dict())
 ```
 

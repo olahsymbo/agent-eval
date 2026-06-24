@@ -23,7 +23,7 @@ def main() -> int:
     load_env_file(ROOT / ".env")
     normalize_google_api_key()
 
-    parser = argparse.ArgumentParser(description="Run the Learning Roadmap Agent experiment.")
+    parser = argparse.ArgumentParser(description="Run the Learning Roadmap Agent observability study.")
     parser.add_argument("--provider", choices=["langchain", "google-adk", "both"], default="both")
     parser.add_argument("--tasks", default=str(ROOT / "experiments" / "learning_roadmap_tasks.json"))
     parser.add_argument("--output-dir", default=str(ROOT / "experiments" / "learning_roadmap_results"))
@@ -54,8 +54,7 @@ def main() -> int:
         print(
             f"{agent_name}: success={summary['success_rate']:.3f}, "
             f"action_entropy={summary['action_entropy']:.3f}, "
-            f"tool_entropy={summary['tool_entropy']:.3f}, "
-            f"EAS={summary['entropic_agent_score']:.3f}"
+            f"tool_entropy={summary['tool_entropy']:.3f}"
         )
     return 0
 

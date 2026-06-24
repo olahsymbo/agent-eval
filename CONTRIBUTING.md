@@ -20,6 +20,29 @@ Run linting:
 poetry run ruff check .
 ```
 
+## Commit Tags
+
+Commit messages must start with a tag so the history stays easy to scan:
+
+```text
+[feat] add CLI observability tables
+[fix] handle empty run logs
+[docs] clarify release flow
+[test] cover table formatting
+[refactor] simplify observer output
+[release] bump package version
+[chore] update project metadata
+```
+
+Enable the shared Git hook once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+After that, `git commit` rejects messages that do not start with one of the
+required tags. Merge, revert, fixup, and squash commits are allowed.
+
 ## Integration Contributions
 
 Adapters should stay optional. Do not add hard runtime dependencies on agent
@@ -33,9 +56,9 @@ Preferred adapter shape:
 - preserve framework-specific fields in `metadata`
 - add tests using simple dictionaries or lightweight fakes
 
-## Metric Contributions
+## Signal Contributions
 
-Metrics should be deterministic, documented, and covered by tests. Prefer
+Observability signals should be deterministic, documented, and covered by tests. Prefer
 standard-library implementations unless a dependency provides a clear benefit.
 
 ## Pull Request Checklist

@@ -1,7 +1,7 @@
 # Observability and Stored Traces
 
 Many teams already store agent traces in observability systems, warehouses, or
-JSONL files. You do not need to run evaluation inside the agent process.
+JSONL files. You do not need to run observability inside the agent process.
 
 Normalize each trace into this shape:
 
@@ -22,11 +22,11 @@ Normalize each trace into this shape:
 Then evaluate from Python:
 
 ```python
-from entropy_agent_eval import EntropyEvaluator
+from entropy_agent_eval import EntropyObserver
 from entropy_agent_eval.io import load_runs
 
 runs = load_runs("runs.jsonl")
-report = EntropyEvaluator().evaluate(runs)
+report = EntropyObserver().observe(runs)
 ```
 
 Or from the CLI:
